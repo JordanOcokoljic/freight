@@ -8,13 +8,15 @@ clients.
 
 ## Usage
 
-`freight <command> <tag>`
+`freight <command> [tag]`
 
-Freight supports two commands:
+Freight supports three commands:
 - `send` will push any changes to the remote, associating them with the
   provided _freight tag_.
 - `accept` will pull any changes from the remote associated with the provided
   _freight tag_.
+- `sweep` will delete any local branches that were created as a side effect of
+  using `send`.
 
 Any text value can be used as a _freight tag_ - just ensure that is memorable,
 and short enough to be easily typed.
